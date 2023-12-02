@@ -1,7 +1,9 @@
 
-const baseURL = "https://anapioficeandfire.com/api/"
+//const baseURL = "https://anapioficeandfire.com/api/"
+//const endpoint = "houses"
 
-const endpoint = "characters"
+const baseURL = "http://lookup-service-prod.mlb.com/"
+const endpoint = "/json/named.player_info.bam?sport_code='mlb'&player_id='493316'"
 
 const url = baseURL + endpoint
 
