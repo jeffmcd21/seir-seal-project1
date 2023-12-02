@@ -1,5 +1,5 @@
 
-# House of Dragons
+# Live Event Finder
 ##### By: JM
 
 Github Repo: [Click Me](https://github.com/jeffmcd21/seir-seal-project1/)
