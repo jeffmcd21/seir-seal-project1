@@ -61,6 +61,7 @@ function eventRequest(request) {
     const eventName = formData.get("eventName")
     //console.log(eventName)
     getEvent(eventName)
+    
 }
 
 document.querySelector("form").addEventListener("submit", eventRequest)
