@@ -21,34 +21,34 @@ function returnEventRequest(event) {
     const eventDiv = document.querySelector(".event")
     eventDiv.innerHTML = `
     <h3>${event._embedded.events[0].name}</h3>
-    <h6>${event._embedded.events[0].url}</h6>
+    <a href="${event._embedded.events[0].url}">Click here for seating chart, pricing, and tickets</a>"
 
     <h3>${event._embedded.events[1].name}</h3>
-    <h6>${event._embedded.events[1].url}</h6>
+    <a href="${event._embedded.events[1].url}">Click here for seating chart, pricing, and tickets</a>"
 
-    // <h3>${event._embedded.events[2].name}</h3>
-    // <h6>${event._embedded.events[2].url}</h6>
+    <h3>${event._embedded.events[2].name}</h3>
+    <a href="${event._embedded.events[2].url}">Click here for seating chart, pricing, and tickets</a>"
 
-    // <h3>${event._embedded.events[3].name}</h3>
-    // <h6>${event._embedded.events[3].url}</h6>
+    <h3>${event._embedded.events[3].name}</h3>
+    <a href="${event._embedded.events[3].url}">Click here for seating chart, pricing, and tickets</a>"
 
-    // <h3>${event._embedded.events[4].name}</h3>
-    // <h6>${event._embedded.events[4].url}</h6>
+    <h3>${event._embedded.events[4].name}</h3>
+    <a href="${event._embedded.events[4].url}">Click here for seating chart, pricing, and tickets</a>"
 
-    // <h3>${event._embedded.events[5].name}</h3>
-    // <h6>${event._embedded.events[5].url}</h6>
+    <h3>${event._embedded.events[5].name}</h3>
+    <a href="${event._embedded.events[5].url}">Click here for seating chart, pricing, and tickets</a>"
 
-    // <h3>${event._embedded.events[6].name}</h3>
-    // <h6>${event._embedded.events[6].url}</h6>
+    <h3>${event._embedded.events[6].name}</h3>
+    <a href="${event._embedded.events[6].url}">Click here for seating chart, pricing, and tickets</a>"
 
-    // <h3>${event._embedded.events[7].name}</h3>
-    // <h6>${event._embedded.events[7].url}</h6>
+    <h3>${event._embedded.events[7].name}</h3>
+    <a href="${event._embedded.events[7].url}">Click here for seating chart, pricing, and tickets</a>"
 
-    // <h3>${event._embedded.events[8].name}</h3>
-    // <h6>${event._embedded.events[8].url}</h6>
+    <h3>${event._embedded.events[8].name}</h3>
+    <a href="${event._embedded.events[8].url}">Click here for seating chart, pricing, and tickets</a>"
 
-    // <h3>${event._embedded.events[9].name}</h3>
-    // <h6>${event._embedded.events[9].url}</h6>
+    <h3>${event._embedded.events[9].name}</h3>
+    <a href="${event._embedded.events[9].url}">Click here for seating chart, pricing, and tickets</a>"
 
     `    
 }
@@ -61,8 +61,13 @@ function eventRequest(request) {
     const eventName = formData.get("eventName")
     //console.log(eventName)
     getEvent(eventName)
-    
+    document.form.reset();
+    //$input.(formData) = " "   
 }
 
 document.querySelector("form").addEventListener("submit", eventRequest)
 getEvent("Buffalo Sabres")
+
+
+
+
