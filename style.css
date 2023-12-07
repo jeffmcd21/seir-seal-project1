@@ -1,10 +1,37 @@
 
+header {
+    margin: auto;
+    padding-bottom: 60%;
+}
+
 h1 {
     text-align: center;
     color: lightblue;
-    background: black;
-    margin: auto;
+    background: transparent;
+    margin: 0px;
 
+}
+
+.Header_Image {
+    background-size: cover;
+    background: transparent;
+    margin: auto;
+    max-width: 964px;
+}
+
+.img_i {
+    object-fit: cover;
+    object-position: center top;
+}
+
+.img_i {
+    max-width: 1440px;
+    width: 100%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    max-height: 80%;
+    background-color: transparent;
 }
 
 h3 {
@@ -13,7 +40,8 @@ h3 {
 }
 
 body {
-    background-color: rgba(24, 81, 81, 0.389);
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(211, 43, 43);
     /* column-count:  2; */
     
 }
@@ -21,4 +49,5 @@ body {
 .event {
     position: relative;
 }
+
 
