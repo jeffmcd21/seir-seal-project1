@@ -1,0 +1,22 @@
+
+h1 {
+    text-align: center;
+    color: lightblue;
+    background: black;
+    margin: auto;
+
+}
+
+h3 {
+    text-align: left;
+    
+}
+
+body {
+    background-color: rgba(73, 75, 75, 0.389);
+}
+
+.event {
+    position: relative;
+}
+
