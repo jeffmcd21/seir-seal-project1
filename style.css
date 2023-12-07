@@ -13,7 +13,9 @@ h3 {
 }
 
 body {
-    background-color: rgba(73, 75, 75, 0.389);
+    background-color: rgba(24, 81, 81, 0.389);
+    /* column-count:  2; */
+    
 }
 
 .event {

@@ -6,16 +6,33 @@
 
 const baseURL = "https://app.ticketmaster.com/discovery/v2/events.json?size=10&apikey=107CcXtgxDmxSxoIjOucSPDRBTMyB9Gn&keyword="
 
+// function getEvent(eventName) {
+// const url = baseURL + eventName
+//     //console.log(url)
+// fetch(url)
+// .then(res => {return res.json()})
+// .then(data => {
+//     returnEventRequest(data)
+//     console.log(data)
+//     })
+// }
+
+
 function getEvent(eventName) {
-const url = baseURL + eventName
-    //console.log(url)
-fetch(url)
-.then(res => {return res.json()})
-.then(data => {
-    returnEventRequest(data)
-    console.log(data)
+    const url = `${baseURL}${eventName}`;
+    // console.log(url);
+  
+    $.ajax({
+      url,
+      method: "GET",
+      dataType: "json",
     })
-}
+    .done(data => {
+      returnEventRequest(data);
+      //console.log(data);
+    })
+  }
+
 
 function returnEventRequest(event) {
     let show = ""
