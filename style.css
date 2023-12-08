@@ -4,12 +4,11 @@ header {
     padding-bottom: 60%;
 }
 
-h1 {
+.headerh1 {
     text-align: center;
     color: lightblue;
     background: transparent;
     margin: 0px;
-
 }
 
 .Header_Image {
@@ -41,8 +40,24 @@ h3 {
 
 body {
     -webkit-font-smoothing: antialiased;
-    background-color: rgb(211, 43, 43);
-    /* column-count:  2; */
+    background-color:   black; 
+    /* rgb(211, 43, 43) */
+    /* column-count:  2; */   
+}
+
+.form {
+    text-align: center;
+
+}
+
+.details {
+    text-align: center;
+    column-count:  two;
+}
+.nameOfEvent {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: red;
     
 }
 
@@ -51,3 +66,12 @@ body {
 }
 
 
+.eventDate {
+    color: white;
+    text-align: center;
+}
+
+.eventTime {
+    color: white;
+    text-align: center;
+}

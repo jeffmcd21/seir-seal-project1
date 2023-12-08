@@ -39,12 +39,14 @@ function returnEventRequest(event) {
     const eventDiv = document.querySelector(".event")
 
     event._embedded.events.forEach(element => {
-        show += `<h5 class="david-jeff is best">${element.name}</h5>
-        <img style="width: 200px;" + src=${element.images[1].url}> 
-        <a href="${element.url}">Click here for seating chart, pricing, and tickets</a>", 
-        <a href="${element.dates.start.localDate}">Event Date: ${element.dates.start.localDate}</a>, 
-        <a href="${element.dates.start.localTime}">Event Time: ${element.dates.start.localTime}</a>
-        `
+        show += `<div class="details">`
+        show += `<h5 class="nameOfEvent">${element.name}</h5>`
+        show += `<img style="width: 200px;" + src=${element.images[1].url}>`
+        show += `<br><a class="eventDate">Event Date: ${element.dates.start.localDate}</a>` 
+        show += `<br><a class="eventTime">Event Time: ${element.dates.start.localTime}</a>`
+        show += `<br><button type="button" onclick="window.open('${element.url}' , '_blank')">Click to Buy</button>`
+        show += `</div>`;
+        
     });
     eventDiv.innerHTML=show
 
