@@ -1,7 +1,7 @@
 
 header {
     margin: auto;
-    padding-bottom: 60%;
+    /* padding-bottom: 25%; */
 }
 
 .headerh1 {
@@ -12,16 +12,21 @@ header {
 }
 
 .Header_Image {
+    /* background-attachment: fixed; */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
     background-size: cover;
     background: transparent;
     margin: auto;
     max-width: 964px;
+    z-index: -1;
 }
 
-.img_i {
+/* .img_i {
     object-fit: cover;
     object-position: center top;
-}
+} */
 
 .img_i {
     max-width: 1440px;
@@ -52,17 +57,23 @@ body {
 
 .details {
     text-align: center;
-    column-count:  two;
 }
 .nameOfEvent {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    color: red;
+    color: lightblue;
     
+}
+
+@media screen and (min-height: 30px;) {
+    .event {
+
+    }
 }
 
 .event {
     position: relative;
+    margin-top: 200px;
 }
 
 

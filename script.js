@@ -114,6 +114,7 @@ function returnEventRequest(event) {
     // `    
 }
 
+
 function eventRequest(request) {
     request.preventDefault()
     const form = request.target;
@@ -127,9 +128,16 @@ function eventRequest(request) {
     //console.log(formData.getAll())
 }
 
-document.querySelector("form").addEventListener("submit", eventRequest)
-getEvent("Buffalo Sabres")
 
+$(() => {
+    $("form").on("submit", function(event) {
+        eventRequest(event);
+      });
+})
+
+
+// document.querySelector("form").addEventListener("submit", eventRequest)
+getEvent("Buffalo Sabres")
 
 
 
