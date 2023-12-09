@@ -4,6 +4,7 @@
 
 //const apikey = "apikey=107CcXtgxDmxSxoIjOucSPDRBTMyB9Gn"
 
+// URL and API key in variable
 const baseURL = "https://app.ticketmaster.com/discovery/v2/events.json?size=10&apikey=107CcXtgxDmxSxoIjOucSPDRBTMyB9Gn&keyword="
 
 // function getEvent(eventName) {
@@ -17,11 +18,12 @@ const baseURL = "https://app.ticketmaster.com/discovery/v2/events.json?size=10&a
 //     })
 // }
 
-
+// Creating a function to connect the URL and an Event name
 function getEvent(eventName) {
     const url = `${baseURL}${eventName}`;
     // console.log(url);
   
+    //Linking to my URL to get live updates
     $.ajax({
       url,
       method: "GET",
@@ -33,7 +35,7 @@ function getEvent(eventName) {
     })
   }
 
-
+// A function to loop through the number of items requested in the URL and return the event name, an image, the date and time of the event, and an option to go to another site to buy tickets for the event
 function returnEventRequest(event) {
     let show = ""
     const eventDiv = document.querySelector(".event")
@@ -114,7 +116,7 @@ function returnEventRequest(event) {
     // `    
 }
 
-
+// A function to make the for accept an input for a new event and clear the request from the form once submitted.
 function eventRequest(request) {
     request.preventDefault()
     const form = request.target;
@@ -128,7 +130,7 @@ function eventRequest(request) {
     //console.log(formData.getAll())
 }
 
-
+// jQuery for the event listner to accept the user input on submit
 $(() => {
     $("form").on("submit", function(event) {
         eventRequest(event);
