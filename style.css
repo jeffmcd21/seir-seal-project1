@@ -5,7 +5,7 @@ html {
 
 header {
     margin: auto;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
 }
 
 .headerh1 {
@@ -16,12 +16,12 @@ header {
     text-shadow: 2px 2px 3px pink;
 }
 
-@media screen and (min-height: 600px;) {
+@media screen and (min-height: 600px) {
     .headerImage {
-        padding: 2em
+        padding: 1em
     }
     .event {
-        padding: 2em
+        padding: 1em
     }
 }
 
@@ -47,7 +47,6 @@ header {
     background-color: transparent;
 }
 
-
 body {
     -webkit-font-smoothing: antialiased;
     background-color:   black; 
@@ -63,33 +62,73 @@ body {
 
 .details {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;  
+    padding: 20px;
+    border: 1px solid #555;
+
+    /* border: auto */
 }
+
+
+.eventInfo {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-column: 2/-1;
+    grid-row: 2/-3;
+}
+
+.locaVen {
+    /* display: inline; */
+    padding: 10px;
+    
+    /* flex-direction: column; */
+    /* flex-wrap: rap; */
+    /* justify-content: space-evenly; */
+}
+
 .nameOfEvent {
+    margin-top: 55px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    color: lightblue;
-    
+    color: lightblue;   
 }
 
 .event {
     position: relative;
-    margin-top: 200px;
+    margin-top: 200px;    
 }
 
 
 .eventDate {
+    margin-top: 55px;
     color: white;
     text-align: center;
 }
 
 .eventTime {
+    margin-top: 55px;
     color: white;
     text-align: center;
 }
 
-html {
-  overflow-x: hidden;
+.eventCtSt {
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
 }
+
+.eventVen {
+    color: white;
+    text-align: center;
+}
+
+/* html {
+  overflow-x: hidden;
+} */
 
 button:hover {
     background-color: lightgray;

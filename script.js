@@ -21,7 +21,7 @@ const baseURL = "https://app.ticketmaster.com/discovery/v2/events.json?size=10&a
 // Creating a function to connect the URL and an Event name
 function getEvent(eventName) {
     const url = `${baseURL}${eventName}`;
-    // console.log(url);
+     //console.log(url);
   
     //Linking to my URL to get live updates
     $.ajax({
@@ -31,7 +31,7 @@ function getEvent(eventName) {
     })
     .done(data => {
       returnEventRequest(data);
-      //console.log(data);
+      console.log(data);
     })
   }
 
@@ -43,10 +43,12 @@ function returnEventRequest(event) {
     event._embedded.events.forEach(element => {
         show += `<div class="details">`
         show += `<a href="${element.url}"><h5 class="nameOfEvent">${element.name}</h5>,</a>`
-        show += `<a href="${element.url}"><img style="width: 200px;" + src=${element.images[1].url}></a>`
-        show += `<br><a class="eventDate">Event Date: ${element.dates.start.localDate}</a>` 
-        show += `<br><a class="eventTime">Event Time: ${element.dates.start.localTime}</a>`
-        show += `<br><button type="button" onclick="window.open('${element.url}' , '_blank')">Click to Buy</button>`
+        show += `<a href="${element.url}"><img class="pic" style="width: 200px;" + src=${element.images[1].url}></a>`
+        show += `<div class="eventInfo"><br><a class="eventDate">Event Date:<br> ${element.dates.start.localDate}</a>` 
+        show += `<br><a class="eventTime">Event Time:<br> ${element.dates.start.localTime}</a></div>`
+        show += `<div class="locaVen"><br><a class="eventCtSt">Location: ${element._embedded.venues[0].city.name}, ${element._embedded.venues[0].state.stateCode}</a>`
+        show += `<br><a class="eventVen">Venue: ${element._embedded.venues[0].name}</a>`
+        show += `<br><button class="ticButton" type="button" onclick="window.open('${element.url}' , '_blank')">Click to Buy</button></div>`
         show += `</div>`;
         
     });
@@ -139,7 +141,7 @@ $(() => {
 
 
 // document.querySelector("form").addEventListener("submit", eventRequest)
-getEvent("Buffalo Sabres")
+getEvent("Trombone Shorty")
 
 
 
