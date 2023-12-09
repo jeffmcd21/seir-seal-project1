@@ -42,8 +42,8 @@ function returnEventRequest(event) {
 
     event._embedded.events.forEach(element => {
         show += `<div class="details">`
-        show += `<h5 class="nameOfEvent">${element.name}</h5>`
-        show += `<img style="width: 200px;" + src=${element.images[1].url}>`
+        show += `<a href="${element.url}"><h5 class="nameOfEvent">${element.name}</h5>,</a>`
+        show += `<a href="${element.url}"><img style="width: 200px;" + src=${element.images[1].url}></a>`
         show += `<br><a class="eventDate">Event Date: ${element.dates.start.localDate}</a>` 
         show += `<br><a class="eventTime">Event Time: ${element.dates.start.localTime}</a>`
         show += `<br><button type="button" onclick="window.open('${element.url}' , '_blank')">Click to Buy</button>`

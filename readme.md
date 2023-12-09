@@ -1,11 +1,13 @@
 
 # Event Scene
-##### By: JM
+##### By: Jeff McDonald
 
-Github Repo: [Click Me](https://github.com/jeffmcd21/seir-seal-project1/)
+Github Repo: [Click Here](https://github.com/jeffmcd21/seir-seal-project1/)
 
-Deployed Site: [Click Me](https://seir-seal-project1-tan.vercel.app/)
+Deployed Site: [Click Here](https://seir-seal-project1-tan.vercel.app/)
 
+
+## Requirements for Project
 
 1. Build with HTML, CSS, JavaScript and jQuery
 2. Hosted on github, vercel.com
@@ -118,13 +120,13 @@ Here put a mix of text explanation plus a picture giving us an idea of the layou
 
 ## Schedule of Work
 
-|Day | Goal | What I did accomplish |
+|Day | Goal | What I did accomplish | 
 |----|------|-----------------------|
-| Sat | Create Readme, Deploy, Get Approval | |
-| Sun | Build fetch of data in JS file ||
-| Mon | Render data from API on screen ||
-| Tues| Build form for user to interact with ||
-| Wed | wrap up functionality ||
-|Thurs| mobile layout styling ||
-| Fri | Desktop layout styling ||
-| Sat | Present Project ||
+| Sat | Create Readme, Deploy, Get Approval | API up and running, readme setup, basic plan for development |
+| Sun | Build fetch of data in JS file | Figured out the paths to accessing the data I needed |
+| Mon | Render data from API on screen | Connect hyperlink, size images |
+| Tues| Build form for user to interact with | Made the form functional |
+| Wed | wrap up functionality | Change links into buttons, shorten code uning loop function |
+|Thurs| mobile layout styling | Developed some frame work for the mobile layout |
+| Fri | Desktop layout styling | Restyled header on desktop/mobile layout|
+| Sat | Present Project | Entertained all of you for a few minutes, Hope you linked it.|
